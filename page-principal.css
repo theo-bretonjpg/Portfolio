@@ -5,9 +5,12 @@ body
 	background: rgb(16,16,16);
 
 }
+
 html{
   scroll-behavior: smooth;
 }
+
+
 .tete{
 
   width : 100%;
@@ -292,7 +295,6 @@ ul li {
 
 .qualites-box{
 
-
   height : 200px;
   width : 25%;
   border-right: white;
@@ -318,6 +320,7 @@ ul li {
 
 .wrapper .icon {
   margin : 0 20px;
+  cursor : pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -350,6 +353,14 @@ ul li {
   padding : 10px 18px;
   border-radius: 25px;
   box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition : all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .tooltip{
+opacity: 1;
+pointer-events: auto;
 }
 
 .wrapper .icon .tooltip:before{
@@ -357,8 +368,8 @@ position :absolute;
 content : "";
 height: 15px;
 width: 15px;
-background: red;
+background: #fff;
 bottom: -8px;
 left: 50%;
-transform: translate(-50%);
+transform: translate(-50%) rotate(45deg);
 }
