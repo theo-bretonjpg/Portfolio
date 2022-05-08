@@ -25,6 +25,13 @@ html{
   float : middle ;
 }
 
+.presentation{
+
+  color: white;
+  align-items: center;
+}
+
+
 .log {
   overflow: hidden;
   background-color: #333;
@@ -104,6 +111,7 @@ h1 {
   position : relative;
   align-items: center;
   justify-content: center;
+  place-items: center;
   
 }
 
@@ -315,7 +323,8 @@ ul li {
 
 
 .wrapper {
-  display: inline-flex
+  display: inline-flex;
+  
 }
 
 .wrapper .icon {
